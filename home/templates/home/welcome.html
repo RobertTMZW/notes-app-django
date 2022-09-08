@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedIn Course</title>
+</head>
+{% block content %}
+<body>
+<h1>Welcome home</h1>
+ <p>Today is {{today}}</p>
+<a href="{% url 'notes.list' %}" class="btn btn-primary">Checkout these SmartNotes</a>
+</body>
+{% endblock %}
+</html>
